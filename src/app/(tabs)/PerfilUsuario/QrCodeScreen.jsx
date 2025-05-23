@@ -1,11 +1,10 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, View, Text, Image } from 'react-native';
-import Colors from '../../../../constants/Colors';
-import Header from '../../../../components/Header';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Botoes from '../../../../components/Botoes';
+import Header from '../../../../components/Header';
+import Colors from '../../../../constants/Colors';
 
 import { useRouter } from 'expo-router';
-import React from 'react';
 
 const QrCodeScreen = () => {
   const router = useRouter();

@@ -1,37 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { TextInput, View, Text, StyleSheet } from 'react-native';
-import RadioButtonRN from 'radio-buttons-react-native';
-import Colors from '../../constants/Colors';
-import Botoes from '../Botoes';
 import { useRouter } from 'expo-router';
+import RadioButtonRN from 'radio-buttons-react-native';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import Colors from '../../constants/Colors';
 import {
-  Bid,
-  Bnome,
-  Bidade,
   Baltura,
-  Bpeso,
   Bgenero,
-  Bnivel_de_atividade,
-  Bgordura,
-  Bcalorias,
-  Bhistorico_medico,
-  Bintolerancias,
-  Bexcluir_alimentos,
-  BsetId,
-  BsetNome,
-  BsetIdade,
+  Bidade,
+  Bnome,
+  Bpeso,
   BsetAltura,
-  BsetPeso,
   BsetGenero,
-  BsetNivelDeAtividade,
-  BsetGordura,
-  BsetCalorias,
-  BsetHistoricoMedico,
-  BsetIntolerancias,
-  BsetExcluirAlimentos,
-  carregarDadosDoUsuario,
+  BsetIdade,
+  BsetNome,
+  BsetPeso,
   inserirOuAtualizarUsuario,
 } from '../../database/variaveis';
+import Botoes from '../Botoes';
 
 const FormularioGeral = () => {
   const router = useRouter();

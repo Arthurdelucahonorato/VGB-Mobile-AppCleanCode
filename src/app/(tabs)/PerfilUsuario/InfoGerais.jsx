@@ -1,11 +1,8 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
-import Botoes from '../../../../components/Botoes';
-import Header from '../../../../components/Header';
 import { LinearGradient } from 'expo-linear-gradient';
-import Colors from '../../../../constants/Colors';
-import JanelaAtual from '../../../../components/JanelaAtual';
+import { StyleSheet, View } from 'react-native';
 import FormularioGeral from '../../../../components/Formularios/FormularioGeral';
+import Header from '../../../../components/Header';
+import Colors from '../../../../constants/Colors';
 
 const InfoGerais = () => {
   return (

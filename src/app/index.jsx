@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import React, { useEffect } from 'react';
-import Header from '../../components/Header';
+import { useRouter } from 'expo-router';
+import { useEffect } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import Botoes from '../../components/Botoes';
+import Header from '../../components/Header';
 import Colors from '../../constants/Colors';
 import { createTable, lista } from '../../database/database';
-import { useRouter } from 'expo-router';
 import {
   Bnome,
 } from '../../database/variaveis';

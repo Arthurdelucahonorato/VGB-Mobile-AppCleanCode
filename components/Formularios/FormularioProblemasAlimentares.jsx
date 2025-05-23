@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { TextInput, View, Text, StyleSheet } from 'react-native';
-import Colors from '../../constants/Colors';
-import Botoes from '../Botoes';
 import { useRouter } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import Colors from '../../constants/Colors';
 import {
   Bintolerancias,
   BsetIntolerancias,
   inserirOuAtualizarUsuario,
 } from '../../database/variaveis';
+import Botoes from '../Botoes';
 
 const FormularioProblemasAlimentares = () => {
   const router = useRouter();

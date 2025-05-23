@@ -1,18 +1,18 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { StyleSheet, View, Text, TextInput } from 'react-native';
-import Colors from '../../constants/Colors';
-import RadioButtonRN from 'radio-buttons-react-native';
-import Botoes from '../Botoes';
 import { useRouter } from 'expo-router';
+import RadioButtonRN from 'radio-buttons-react-native';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import Colors from '../../constants/Colors';
 import {
-  Bnivel_de_atividade,
-  Bgordura,
   Bcalorias,
-  BsetNivelDeAtividade,
-  BsetGordura,
+  Bgordura,
+  Bnivel_de_atividade,
   BsetCalorias,
+  BsetGordura,
+  BsetNivelDeAtividade,
   inserirOuAtualizarUsuario,
 } from '../../database/variaveis';
+import Botoes from '../Botoes';
 
 const FormularioFisico = () => {
   const router = useRouter();

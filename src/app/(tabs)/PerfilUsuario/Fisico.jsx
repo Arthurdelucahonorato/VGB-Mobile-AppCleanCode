@@ -1,9 +1,8 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
+import { StyleSheet, View } from 'react-native';
+import FormularioFisico from '../../../../components/Formularios/FormularioFisico';
 import Header from '../../../../components/Header';
 import Colors from '../../../../constants/Colors';
-import FormularioFisico from '../../../../components/Formularios/FormularioFisico';
 
 const Fisico = () => {
   return (

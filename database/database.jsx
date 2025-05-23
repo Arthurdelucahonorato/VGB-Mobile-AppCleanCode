@@ -1,5 +1,5 @@
 import * as SQLite from 'expo-sqlite';
-import { inserirOuAtualizarUsuario, carregarDadosDoUsuario, carregarDadosDaLista } from './variaveis';
+import { carregarDadosDoUsuario, inserirOuAtualizarUsuario } from './variaveis';
 
 const db = SQLite.openDatabase('infos.db');
 
@@ -73,4 +73,4 @@ const lista = () => {
 };
 
 
-export { db, createTable, refeicoes, lista };
+export { createTable, db, lista, refeicoes };

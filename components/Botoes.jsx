@@ -1,6 +1,5 @@
 import { useRouter } from 'expo-router';
-import React from 'react';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Colors from '../constants/Colors';
 
 const Botoes = ({ texto, urlProximo, urlAnterior, ativo, padding, submit }) => {

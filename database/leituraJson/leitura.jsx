@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { Bjson_texto, Bjson_ingredientes } from '../variaveis';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { Bjson_ingredientes, Bjson_texto } from '../variaveis';
 
 const ReadJSONScreen = () => {
   let [refeicoes, setRefeicoes] = useState(null);

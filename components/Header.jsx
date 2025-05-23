@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Colors from '../constants/Colors';
 import { Bnome } from '../database/variaveis';
 

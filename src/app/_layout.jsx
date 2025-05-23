@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import useLoadFonts from '../../hooks/useLoadFonts';
+import { useEffect, useState } from 'react';
 import Colors from '../../constants/Colors';
+import useLoadFonts from '../../hooks/useLoadFonts';
 export { ErrorBundary } from 'expo-router';
 
 export const unstable_settings = {

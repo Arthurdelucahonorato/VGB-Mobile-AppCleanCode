@@ -1,5 +1,5 @@
+import { StyleSheet, Text, View } from 'react-native';
 import Colors from '../constants/Colors';
-import { View, Text, StyleSheet } from 'react-native';
 
 const JanelaAtual = ({ titulo }) => {
   return (

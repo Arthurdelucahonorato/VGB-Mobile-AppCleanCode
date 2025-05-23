@@ -72,3 +72,67 @@ code .
 ## CI/CD
 
 O projeto possui um workflow do GitHub Actions que executa automaticamente o linter em todos os Pull Requests para verificar a qualidade do código.
+
+## Changelog
+
+### 📋 Análise Inicial do ESLint
+
+O linter identificou **192 problemas** no código, sendo **8 erros críticos** e **184 warnings**.
+
+#### 🚨 **Erros Críticos Identificados**
+
+##### Chaves Duplicadas
+- `FormularioFisico.jsx` e `FormularioGeral.jsx`: Propriedade `paddingTop` duplicada nos styles
+
+##### Variáveis Read-Only
+- `leitura.jsx`: Tentativa de modificar `Bjson_texto` e `Bjson_ingredientes` que são importadas
+
+##### Padrões Vazios
+- `_layout.jsx`: Objetos de desestruturação vazios `{ }` em props de ícones
+
+##### Variáveis Globais Não Definidas
+- `ChamaApi.jsx`: `fetch` não está definido no escopo global
+
+#### ⚠️ **Warnings Principais**
+
+##### Imports Não Utilizados (Mais Comum)
+Componentes importados mas não usados em quase todos os arquivos:
+- `React`, `View`, `Text`, `StyleSheet`
+- `LinearGradient`, `Header`, `Botoes`
+- Componentes de formulário e navegação
+
+##### Variáveis Não Utilizadas
+- Props de função não usadas (`urlProximo`, `id`, etc.)
+- Variáveis de estado (`loading` em alguns componentes)
+- Imports de variáveis do banco de dados
+
+##### Parâmetros de Callback Não Usados
+- Parâmetros `_`, `result`, `error` em funções de callback do SQLite
+
+#### 📊 **Arquivos Mais Problemáticos**
+1. `FormularioGeral.jsx`: 22 warnings
+2. `FormularioHistorico.jsx`: 25 warnings
+3. `GerarGuia.jsx`: 10 warnings
+4. `Cards.jsx`: 8 warnings
+
+#### 🔧 **Ações Pendentes**
+
+##### Correções Feitas
+- Remover imports não utilizados
+- Corrigir formatação e pontuação
+
+##### Correções Manuais Necessárias
+- Resolver chaves duplicadas nos styles
+- Corrigir modificação de variáveis read-only
+- Adicionar global `fetch` ou importar polyfill
+- Remover parâmetros de função não utilizados
+
+##### Melhorias de Código
+- Implementar tree-shaking para imports
+- Revisar arquitetura de componentes
+- Otimizar imports de bibliotecas externas
+
+---
+
+### 🔄 **Próximas Refatorações**
+_Esta seção será atualizada conforme o progresso das melhorias..._

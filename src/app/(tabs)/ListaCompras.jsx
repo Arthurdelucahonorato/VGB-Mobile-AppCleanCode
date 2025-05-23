@@ -1,11 +1,10 @@
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Header from '../../../components/Header';
 import Colors from '../../../constants/Colors';
-import React, { useState, useEffect } from 'react';
 import { buscaLista } from '../../../database/buscaLista';
 
-import JanelaAtual from '../../../components/JanelaAtual';
 
 const ListaCompras = () => {
   const [lista, setLista] = useState(null);

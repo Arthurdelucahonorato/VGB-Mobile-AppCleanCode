@@ -1,7 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
-import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from 'expo-router';
 import Colors from '../../../constants/Colors';
 
 const Layout = () => {

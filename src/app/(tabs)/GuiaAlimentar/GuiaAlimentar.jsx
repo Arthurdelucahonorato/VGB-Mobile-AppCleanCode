@@ -1,10 +1,9 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import Colors from '../../../../constants/Colors';
+import { StyleSheet, View } from 'react-native';
+import Cards from '../../../../components/Cards';
 import Header from '../../../../components/Header';
 import JanelaAtual from '../../../../components/JanelaAtual';
-import Cards from '../../../../components/Cards';
+import Colors from '../../../../constants/Colors';
 
 const GuiaAlimentar = () => {
   return (

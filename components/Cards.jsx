@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, Dimensions , ScrollView } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
-import { Checkbox } from 'react-native-paper';
-import { buscaRefeicoes } from '../database/buscaRefeicoes';
-import { updateRefeicoes } from '../database/updateRefeicoes';
-import { dropRefeicoes } from '../database/dropRefeicoes';
 import { useRouter } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { Dimensions, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Checkbox } from 'react-native-paper';
+import Carousel from 'react-native-snap-carousel';
 import Colors from '../constants/Colors';
+import { buscaRefeicoes } from '../database/buscaRefeicoes';
+import { dropRefeicoes } from '../database/dropRefeicoes';
+import { updateRefeicoes } from '../database/updateRefeicoes';
 
 
 const Cards = () => {

@@ -1,11 +1,9 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
-import Botoes from '../../../../components/Botoes';
 import { LinearGradient } from 'expo-linear-gradient';
-import Header from '../../../../components/Header';
-import Colors from '../../../../constants/Colors';
-import JanelaAtual from '../../../../components/JanelaAtual';
+import { StyleSheet, View } from 'react-native';
 import FormularioHistorico from '../../../../components/Formularios/FormularioHistorico';
+import Header from '../../../../components/Header';
+import JanelaAtual from '../../../../components/JanelaAtual';
+import Colors from '../../../../constants/Colors';
 
 const Historico = () => {
   return (

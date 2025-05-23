@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import Header from '../../../../components/Header';
-import Colors from '../../../../constants/Colors';
-import Botoes from '../../../../components/Botoes';
 import { Entypo } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { ActivityIndicator } from 'react-native-paper';
+import Botoes from '../../../../components/Botoes';
+import Header from '../../../../components/Header';
 import { fetchChatGPTResponse } from '../../../../components/requisicaoGPT/ChamaApi';
-import { inserirRefeicao } from '../../../../database/insetRefeicoes';
-import { inserirLista } from '../../../../database/insertLista';
+import Colors from '../../../../constants/Colors';
 import { refeicoes } from '../../../../database/database';
+import { inserirLista } from '../../../../database/insertLista';
+import { inserirRefeicao } from '../../../../database/insetRefeicoes';
 
 
 import {
-  Bidade,
   Baltura,
-  Bpeso,
-  Bgenero,
-  Bnivel_de_atividade,
-  Bgordura,
   Bcalorias,
-  Bhistorico_medico,
-  Bintolerancias,
   Bexcluir_alimentos,
+  Bgenero,
+  Bgordura,
+  Bhistorico_medico,
+  Bidade,
+  Bintolerancias,
+  Bnivel_de_atividade,
+  Bpeso,
   carregarDadosDoUsuario,
 } from '../../../../database/variaveis';
 

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { TextInput, View, Text, StyleSheet } from "react-native";
-import Colors from "../../constants/Colors";
-import Botoes from "../Botoes";
-import { useRouter } from "expo-router";
+import React, { useState, useEffect } from 'react';
+import { TextInput, View, Text, StyleSheet } from 'react-native';
+import Colors from '../../constants/Colors';
+import Botoes from '../Botoes';
+import { useRouter } from 'expo-router';
 import {
   Bintolerancias,
   BsetIntolerancias,
   inserirOuAtualizarUsuario,
-} from "../../database/variaveis";
+} from '../../database/variaveis';
 
 const FormularioProblemasAlimentares = () => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const FormularioProblemasAlimentares = () => {
 
     inserirOuAtualizarUsuario();
 
-    router.push(`PerfilUsuario/NaoIncluir`);
+    router.push('PerfilUsuario/NaoIncluir');
   };
 
   return (
@@ -61,12 +61,12 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   containerProblemasAlimentares: {
-    flexDirection: "column",
+    flexDirection: 'column',
     paddingTop: 80,
   },
   botao: {
-    alignSelf: "flex-end",
-    position: "absolute",
+    alignSelf: 'flex-end',
+    position: 'absolute',
     bottom: -450,
   },
   inputMaior: {
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   label: {
     color: Colors.brancoBase,
     fontSize: 16,
-    fontFamily: "KodChasanMedium",
+    fontFamily: 'KodChasanMedium',
     paddingBottom: 30,
   },
 });

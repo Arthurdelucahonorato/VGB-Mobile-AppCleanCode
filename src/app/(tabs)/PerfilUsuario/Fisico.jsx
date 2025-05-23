@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import { LinearGradient } from "expo-linear-gradient";
-import Header from "../../../../components/Header";
-import Colors from "../../../../constants/Colors";
-import FormularioFisico from "../../../../components/Formularios/FormularioFisico";
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
+import Header from '../../../../components/Header';
+import Colors from '../../../../constants/Colors';
+import FormularioFisico from '../../../../components/Formularios/FormularioFisico';
 
 const Fisico = () => {
   return (
@@ -21,12 +21,12 @@ const Fisico = () => {
 const styles = StyleSheet.create({
   containerGlobal: {
     flex: 1,
-    alignItems: "center",
+    alignItems: 'center',
   },
   container: {
     flex: 1,
-    width: "80%",
-    alignItems: "center",
+    width: '80%',
+    alignItems: 'center',
   },
 });
 

@@ -1,5 +1,5 @@
-import { Stack } from "expo-router";
-import Colors from "../../../../constants/Colors";
+import { Stack } from 'expo-router';
+import Colors from '../../../../constants/Colors';
 
 const PerfilUsuarioNav = () => {
   return (

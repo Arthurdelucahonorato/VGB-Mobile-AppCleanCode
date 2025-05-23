@@ -1,8 +1,8 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import { Tabs } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import Colors from "../../../constants/Colors";
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { Tabs } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
+import Colors from '../../../constants/Colors';
 
 const Layout = () => {
   return (
@@ -17,7 +17,7 @@ const Layout = () => {
       <Tabs.Screen
         name="ListaCompras"
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ }) => (
             <Ionicons
               style={{ marginTop: 9 }}
@@ -31,7 +31,7 @@ const Layout = () => {
       <Tabs.Screen
         name="GuiaAlimentar"
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ }) => (
             <Ionicons
               style={{ marginTop: 9 }}
@@ -45,7 +45,7 @@ const Layout = () => {
       <Tabs.Screen
         name="PerfilUsuario"
         options={{
-          tabBarLabel: "",
+          tabBarLabel: '',
           tabBarIcon: ({ }) => (
             <Ionicons
               style={{ marginTop: 9 }}
@@ -54,7 +54,7 @@ const Layout = () => {
               color="white"
             />
           ),
-          href: '/PerfilUsuario/QrCodeScreen'
+          href: '/PerfilUsuario/QrCodeScreen',
         }}
       />
     </Tabs>

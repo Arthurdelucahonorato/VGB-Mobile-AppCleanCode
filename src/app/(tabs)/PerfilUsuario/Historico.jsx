@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import Botoes from "../../../../components/Botoes";
-import { LinearGradient } from "expo-linear-gradient";
-import Header from "../../../../components/Header";
-import Colors from "../../../../constants/Colors";
-import JanelaAtual from "../../../../components/JanelaAtual";
-import FormularioHistorico from "../../../../components/Formularios/FormularioHistorico";
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import Botoes from '../../../../components/Botoes';
+import { LinearGradient } from 'expo-linear-gradient';
+import Header from '../../../../components/Header';
+import Colors from '../../../../constants/Colors';
+import JanelaAtual from '../../../../components/JanelaAtual';
+import FormularioHistorico from '../../../../components/Formularios/FormularioHistorico';
 
 const Historico = () => {
   return (
@@ -25,13 +25,13 @@ const Historico = () => {
 const styles = StyleSheet.create({
   containerGlobal: {
     flex: 1,
-    alignItems: "center",
+    alignItems: 'center',
   },
   container: {
     flex: 1,
-    width: "80%",
-    alignItems: "center",
-  }
+    width: '80%',
+    alignItems: 'center',
+  },
 });
 
 export default Historico;

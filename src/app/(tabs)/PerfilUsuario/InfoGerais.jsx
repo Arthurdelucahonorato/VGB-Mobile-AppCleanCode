@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import Botoes from "../../../../components/Botoes";
-import Header from "../../../../components/Header";
-import { LinearGradient } from "expo-linear-gradient";
-import Colors from "../../../../constants/Colors";
-import JanelaAtual from "../../../../components/JanelaAtual";
-import FormularioGeral from "../../../../components/Formularios/FormularioGeral";
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import Botoes from '../../../../components/Botoes';
+import Header from '../../../../components/Header';
+import { LinearGradient } from 'expo-linear-gradient';
+import Colors from '../../../../constants/Colors';
+import JanelaAtual from '../../../../components/JanelaAtual';
+import FormularioGeral from '../../../../components/Formularios/FormularioGeral';
 
 const InfoGerais = () => {
   return (
@@ -23,15 +23,15 @@ const InfoGerais = () => {
 const styles = StyleSheet.create({
   containerGlobal: {
     flex: 1,
-    alignItems: "center",
+    alignItems: 'center',
   },
 
   container: {
-    width: "80%",
-    alignItems: "center",
+    width: '80%',
+    alignItems: 'center',
   },
   tituloPagina: {
-    fontFamily: "KodChasanBold",
+    fontFamily: 'KodChasanBold',
     color: Colors.brancoBase,
     fontSize: 20,
   },

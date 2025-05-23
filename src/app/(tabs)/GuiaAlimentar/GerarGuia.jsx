@@ -12,6 +12,7 @@ import { inserirRefeicao } from "../../../../database/insetRefeicoes";
 import { inserirLista } from "../../../../database/insertLista";
 import { refeicoes } from "../../../../database/database";
 
+
 import {
   Bidade,
   Baltura,
@@ -55,11 +56,24 @@ const GerarGuia = () => {
     refeicoes();
     setLoading(true);
     try {
-      for (let i = 0; i < 7; i++) {
-        const data1 = await fetchChatGPTResponse(key, prompt1, 200);
-        await inserirRefeicao(data1.choices[0].message.content);
-        novasRefeicoes.push(data1.choices[0].message.content);
-      }
+      // for (let i = 0; i < 7; i++) {
+      //   const data1 = await fetchChatGPTResponse(key, prompt1, 200);
+      //   await inserirRefeicao(data1.choices[0].message.content);
+      //   novasRefeicoes.push(data1.choices[0].message.content);
+      // }
+
+      const respostas = await Promise.all(
+      Array.from({ length: 7 }).map(() =>
+    fetchChatGPTResponse(key, prompt1, 200)
+  )
+);
+
+respostas.forEach(async (res) => {
+  const refeicao = res.choices[0].message.content;
+  await inserirRefeicao(refeicao);
+  novasRefeicoes.push(refeicao);
+});
+
 
       console.log(novasRefeicoes);
       const data2 = await fetchChatGPTResponse(key, prompt2, 1000);

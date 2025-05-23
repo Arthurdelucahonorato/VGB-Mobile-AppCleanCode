@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import Header from "../../../components/Header";
 import Colors from "../../../constants/Colors";
@@ -8,7 +8,7 @@ import { buscaLista } from "../../../database/buscaLista";
 import JanelaAtual from "../../../components/JanelaAtual";
 
 const ListaCompras = () => {
-  const [lista, setLista] = useState([]);
+  const [lista, setLista] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
@@ -37,8 +37,14 @@ const ListaCompras = () => {
         <Header ativo={true} />
         <Text style={styles.tituloListaCompras}>Lista de Compras</Text>
       </View>
-      {lista === null ? (
-        <Text style={styles.TextoCarregando}>° ° °</Text> // Mostra três pontos se lista é null
+
+      {loading ? (
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color={Colors.brancoBase} />
+          <Text style={styles.TextoCarregando}>Carregando lista...</Text>
+        </View>
+      ) : !lista || !lista.texto ? (
+        <Text style={styles.TextoCarregando}>Lista vazia.</Text>
       ) : (
         <View style={styles.ScrollViewContainer}>
           <ScrollView>
@@ -87,8 +93,14 @@ const styles = StyleSheet.create({
     color: Colors.cinzaBase,
     fontSize: 14,
     fontFamily: "KodChasanMedium",
-    position: "absolute",
-    top: "50%",
+    marginTop: 20,
+    textAlign: "center",
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingBottom: 100,
   },
 });
 
